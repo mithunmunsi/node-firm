@@ -44,6 +44,10 @@ app.get('/product', (req, res) => {
   res.end(output);
 });
 
+app.get('*', (req, res) => {
+  res.send(404, 'Not Found');
+});
+
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
   console.log('Listening to requests on port 4000');
