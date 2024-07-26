@@ -4,7 +4,11 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/mithunmunsi/node-firm.git '
+                git(
+                    url: 'https://github.com/mithunmunsi/node-firm.git', 
+                    branch: 'main', // or 'master', depending on your repository
+                  
+                )
             }
         }
 
