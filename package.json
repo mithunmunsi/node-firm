@@ -4,8 +4,10 @@
   "description": "Learning node.js",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "test": "echo \"No tests specified\" && exit 0"
+    "start": "node index.js",
+    "test": "echo \"No tests specified\" && exit 0",
+    "build": "echo \"Build script is not yet defined.\" && exit 0",
+    "deploy": "echo \"Deploy script is not yet defined.\" && exit 0"
   },
   "author": "Mithun Munsi",
   "license": "ISC",
